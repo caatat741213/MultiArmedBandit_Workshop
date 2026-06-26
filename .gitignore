@@ -1,0 +1,16 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.ipynb_checkpoints/
+
+# Jupyter 
+.virtual_documents/
+
+# venv
+.venv/
+venv/
+env/
+incvenv/
+
+doc/
