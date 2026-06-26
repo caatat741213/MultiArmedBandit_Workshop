@@ -38,6 +38,23 @@ By completing this workshop, students will be able to:
 
 ---
 
+## 🏆 My Workshop Summary & Key Findings
+
+### 1. Round 1 (Static Environment)
+* **What I found:** When the casino does not change, **less exploration is better**. My fixed $\epsilon = 0.01$ got the highest score of **1826 points**.
+* **The Reason:** After the agent finds the best machine, it should stop trying other machines and focus on exploiting it to make money.
+
+### 2. Round 2 (Changing Environment)
+* **What I found:** When the casino changes over time, **we must keep exploring**. My `eps=0.1` got **2594 points**, which is better than `eps=0.01` (**2584 points**).
+* **The Reason:** If the agent stops exploring, it will get "stuck" on an old machine when that machine becomes bad. 
+* **The Alpha ($\alpha$) Rule:** A medium $\alpha$ (0.1) is the best. It helps the agent forget old data and learn new changes quickly.
+
+### 3. Conclusion
+* **In a stable world**, we should exploit more and explore less.
+* **In a changing world**, we must always explore a little bit and update our memory fast.
+
+---
+
 ## 💻 Technical Notes
 - Works in **Jupyter Notebook** or **Google Colab**.
 - Dependencies: `numpy`, `matplotlib`, `pandas`, `IPython.display`
@@ -48,7 +65,7 @@ By completing this workshop, students will be able to:
 ## 🧩 Files Included
 | File | Description |
 |------|--------------|
-| `Casino_Challenge_MAB_Workshop.ipynb` | Main notebook with competition, code, and reflection prompts. |
+| `Casino_Challenge_MAB_Workshop_LCC.ipynb` | Main notebook with competition, code, and reflection prompts. |
 | `README.md` | This summary document. |
 
 ---
